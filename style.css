@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+:root {
+    --white-ligth: #f0eeee;
+    --oceanblue: #1fe3ed;   
+
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /*text-decoration remova a ''underline'' do link */
+}
+
+body, 
+html {
+    font-family: 'Poppins', sans-serif;
+    background: var(--white-ligth);
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-container .avatar {
+    width: 213px;
+    height: 213px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--oceanblue);
+    border-radius: 50%;
+}
+
+.tree-container .avatar img {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+}
+
+.tree-container .insta-user {
+    margin-top: 15px;
+    color: var(--oceanblue)
+}
+
+.tree-container .links-container {
+    margin-top: 17px;
+    
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.links-container .link {
+    margin-top: 16px;
+    width: 325px;
+
+    border: 2px solid var(--oceanblue);
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+
+    /* 12px na horizontal */
+    padding: 12px 0;
+
+    transition: ease 0.3s;
+}
+
+/* Hover altera a cor do objeto quando o mouse passa por cima.*/
+.links-container .link:hover {
+    background: var(--oceanblue);
+    color: var(--white-ligth);
+
+}
+
+
+/* Gap = espaço entre os objetos */
+/* Display: grid = objetos separados por colunas */
+/* Grid-template-columns: repeat (número de frações por item) */
+.tree-container .social-containers {
+
+    margin-top: 68px;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 29px;
+
+}
+
+.social-containers .social {
+
+    transform: scale(0.9);
+    
+    transition: ease 0.3s;
+
+}
+
+.social-containers .social:hover {
+
+    transform: scale(1.0);
+}
